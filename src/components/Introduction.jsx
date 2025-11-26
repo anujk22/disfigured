@@ -23,19 +23,14 @@ function Introduction() {
           </p>
         </div>
         
-        {/* Visual Placeholder */}
-        <div className="mt-12 rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-500/5 to-blue-500/5 border border-cyan-500/20 p-12">
-          <div className="flex items-center justify-center h-64">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
-                <svg className="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <p className="text-gray-400 italic">Community / Connection Visual</p>
-              <p className="text-gray-500 text-sm max-w-md mx-auto">Symbolic representation of connection, support, and being heard</p>
-            </div>
-          </div>
+        {/* Visual with actual image */}
+        <div className="mt-12 rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-500/5 to-blue-500/5 border border-cyan-500/20">
+          <img 
+            src="https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Silhouette of people gathered together against blue sky"
+            className="w-full h-auto object-cover"
+          />
+         
         </div>
       </div>
     </section>

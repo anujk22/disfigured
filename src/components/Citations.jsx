@@ -13,10 +13,24 @@ function Citations() {
       year: "2022"
     },
     {
+      author: "Meg",
+      title: "White Mask Rests on Dead Branches",
+      publisher: "Unsplash",
+      year: "2023",
+      url: "unsplash.com/photos/a-white-mask-rests-on-dead-branches-bkk-j21pOVI"
+    },
+    {
       author: "Norman, Emma Meredith",
       title: "Facing Disfigurement: Stigma and the Emotional Impact of Visible Difference",
       publisher: "Routledge",
       year: "2020"
+    },
+    {
+      author: "Papaioannou, Kostas",
+      title: "Silhouette Photo of People",
+      publisher: "Unsplash",
+      year: "2017",
+      url: "unsplash.com/photos/silhouette-photo-of-people-tysecUm5HJA"
     },
     {
       author: "Smit, Dorien, et al.",
@@ -34,7 +48,7 @@ function Citations() {
   ];
 
   return (
-    <section className="relative py-24 px-6 bg-black">
+    <section className="relative py-24 px-6 bg-black pb-32">
       <div className="max-w-4xl mx-auto">
         {/* Section Label */}
         <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-gray-700/30 to-gray-600/30 border border-gray-600/30 rounded-full">
@@ -52,7 +66,8 @@ function Citations() {
             <div key={index} className="border-l-2 border-gray-700 pl-6 hover:border-cyan-500 transition-colors">
               <p className="text-gray-300 leading-relaxed">
                 {citation.author}. <em>{citation.title}</em>. {citation.publisher}, {citation.year}
-                {citation.pages && `, ${citation.pages}`}.
+                {citation.pages && `, ${citation.pages}`}
+                {citation.url && `, ${citation.url}`}.
               </p>
             </div>
           ))}

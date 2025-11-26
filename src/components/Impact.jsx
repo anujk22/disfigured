@@ -47,11 +47,21 @@ function Impact() {
         </div>
         
         {/* Ongoing Development */}
-        <div className="bg-gradient-to-br from-cyan-500/5 to-green-500/5 border border-cyan-500/20 rounded-2xl p-8">
+        <div className="bg-gradient-to-br from-cyan-500/5 to-green-500/5 border border-cyan-500/20 rounded-2xl p-8 mb-12">
           <h3 className="text-2xl font-semibold text-white mb-4">Continuous Improvement</h3>
           <p className="text-gray-300 leading-relaxed">
             The site is meant to stay experimental and responsive: moderation rules, reflection prompts, and interface choices would be updated based on what users report as helpful or harmful, as well as on outcome measures like engagement, self-reported confidence in social situations, and perceived sense of community. In this way, the project frames "judgment-free" not as a static promise, but as a standard the community continually works toward through design, enforcement, and collective learning.
           </p>
+        </div>
+
+        {/* Visual with actual image */}
+        <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-500/5 to-green-500/5 border border-cyan-500/20">
+          <img 
+            src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/22dba3d8-9a55-4546-abf6-1fa44e56250a.png" 
+            alt="Platform impact and growth metrics visualization"
+            className="w-full h-auto object-cover"
+          />
+
         </div>
       </div>
     </section>

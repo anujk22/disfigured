@@ -12,8 +12,8 @@ function Hero() {
         {/* ASCII Title Container - Smaller text with overflow visible */}
         <div className="relative w-full mx-auto" style={{ height: '200px', maxWidth: '1000px', overflow: 'visible' }}>
           <ASCIIText
-            text="disfigurement"
-            asciiFontSize={5}
+            text="Disfigured"
+            asciiFontSize={6}
             textFontSize={320}
             textColor="#fdf9f3"
             planeBaseHeight={13}
