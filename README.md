@@ -2,7 +2,7 @@
 
 A modern, interactive website showcasing a peer support platform proposal for people with facial disfigurement. Built as an academic project exploring digital community design, accessibility, and online support systems.
 
-![Disfigured Banner](./banner.png)
+<img width="1093" height="1066" alt="banner" src="https://github.com/user-attachments/assets/e07f16e0-faa6-4b29-9750-56bc93a8c301" />
 
 ## 📋 About
 
