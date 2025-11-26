@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import ASCIIText from './ASCIIText';
 
 function Hero() {
-  const [isReady, setIsReady] = useState(false);
+  const [key, setKey] = useState(0);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    // Small delay to ensure layout is calculated
+    // Force re-render after mount to recalculate dimensions
     const timer = setTimeout(() => {
-      setIsReady(true);
+      setKey(1);
     }, 100);
 
     return () => clearTimeout(timer);
@@ -21,18 +22,21 @@ function Hero() {
       </div>
       
       <div className="w-full max-w-6xl px-6 relative z-10">
-        {/* ASCII Title Container - Only render when ready */}
-        <div className="relative w-full mx-auto" style={{ height: '200px', maxWidth: '1000px', overflow: 'visible' }}>
-          {isReady && (
-            <ASCIIText
-              text="disfigured"
-              asciiFontSize={5}
-              textFontSize={200}
-              textColor="#fdf9f3"
-              planeBaseHeight={8}
-              enableWaves={false}
-            />
-          )}
+        {/* ASCII Title Container */}
+        <div 
+          ref={containerRef}
+          className="relative w-full mx-auto" 
+          style={{ height: '200px', maxWidth: '1000px', overflow: 'visible' }}
+        >
+          <ASCIIText
+            key={key}
+            text="disfigured"
+            asciiFontSize={6}
+            textFontSize={320}
+            textColor="#fdf9f3"
+            planeBaseHeight={13}
+            enableWaves={false}
+          />
         </div>
         
         <div className="text-center mt-20 space-y-4">
