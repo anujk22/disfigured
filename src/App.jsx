@@ -1,20 +1,32 @@
 import ASCIIText from './components/ASCIIText';
+import Hero from './components/Hero';
+import Introduction from './components/Introduction';
+import Problem from './components/Problem';
+import Solution from './components/Solution';
+import Design from './components/Design';
+import Impact from './components/Impact';
+import Reflection from './components/Reflection';
+import Citations from './components/Citations';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-950">
-      <div className="w-full max-w-5xl px-6">
-        <div className="ascii-banner">
-          <ASCIIText
-            text="disfigurement"
-            asciiFontSize={7}
-            textFontSize={320}
-            textColor="#fdf9f3"
-            planeBaseHeight={12}
-            enableWaves={false}
-          />
-        </div>
-      </div>
+    <div className="min-h-screen bg-slate-950">
+      {/* Hero Section with ASCII Title */}
+      <Hero />
+      
+      {/* Main Content */}
+      <main className="relative">
+        <Introduction />
+        <Problem />
+        <Solution />
+        <Design />
+        <Impact />
+        <Reflection />
+        <Citations />
+      </main>
+      
+      <Footer />
     </div>
   );
 }
